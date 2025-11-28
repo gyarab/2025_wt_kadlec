@@ -10,7 +10,35 @@
 <body>
     <div class="container">
         <a href="https://vuejs.org/guide/introduction"></a>
-          <div id="app">{{ message }}`
+          <div id="app">
+            <form>
+                <div>
+
+                        Name: <input class="form-control">
+                    <input type="text" name="name" placeholder="jmeno">
+                </div>
+                <div>
+
+                    <select name="planet">
+                        <option value="mars">mars - cervena planeta</option>
+                        <option value="venuse">venuse -</option>
+                    </select>
+                </div>
+                <div>
+
+                    <input type="number" name="days" id="days">
+                </div>
+                <div>
+
+                    <input type="checkbox" id="terms">
+                    <label for="terms">Souhlasim s rizikem</label>
+                </div>
+                <div>
+                    <button class="btn btn-secondary">Odeslat</button>
+                </div>
+            </form>
+            
+            {{ message }}`
 
                 <br>
 
