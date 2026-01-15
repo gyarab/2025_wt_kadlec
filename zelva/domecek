@@ -1,0 +1,31 @@
+from math import sqrt
+from turtle import forward, left, right, exitonclick
+from random import randint
+
+
+def domecek(a):
+    c = a * sqrt(2)
+    strecha = c / 2
+
+    left(90)
+    forward(a)
+    right(45)
+    forward(strecha)
+    right(90)
+    forward(strecha)
+    right(45)
+    forward(a)
+    right(135)
+    forward(c)
+    right(135)
+    forward(a)
+    right(135)
+    forward(c)
+    left(135)
+    forward(a)
+
+for i in range(8):
+    velikost = randint(40, 80)
+    domecek(velikost)
+
+exitonclick()
